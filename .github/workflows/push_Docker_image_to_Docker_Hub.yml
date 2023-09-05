@@ -1,6 +1,6 @@
 name: Docker Images CI
 
-on: 
+on: workflow_dispatch
   push:
     branches:
       - main
