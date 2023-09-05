@@ -21,7 +21,7 @@ jobs:
         run: 
           docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag ekaymoldaev/GitHub_Actions:${{github.sha }}
+        run: docker build . --file Dockerfile --tag ekaymoldaev/github_actions:${{github.sha }}
         
       - name: Docker Push
         run: docker push ekaymoldaev/GitHub_Actions:${{github.sha }}
