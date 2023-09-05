@@ -1,6 +1,7 @@
 name: Docker Images CI
 
-on: workflow_dispatch
+on:
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -24,7 +25,5 @@ jobs:
         
       - name: Docker Push
         run: docker push ekaymoldaev/GitHub_Actions:${{github.sha }}
-
-
 
 
