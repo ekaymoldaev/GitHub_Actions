@@ -24,6 +24,6 @@ jobs:
         run: docker build . --file Dockerfile --tag ekaymoldaev/github_actions:${{github.sha }}
         
       - name: Docker Push
-        run: docker push ekaymoldaev/GitHub_Actions:${{github.sha }}
+        run: docker push ekaymoldaev/github_actions:${{github.sha }}
 
 
