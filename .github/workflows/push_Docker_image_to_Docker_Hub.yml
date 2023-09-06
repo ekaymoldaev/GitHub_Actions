@@ -27,6 +27,5 @@ jobs:
         run: docker push ekaymoldaev/github_actions:${{github.sha }}
 
         
-
 ###https://www.geeksforgeeks.org/how-to-publish-docker-image-to-dockerhub-using-github-actions/
 ###https://docs.github.com/en/actions/publishing-packages/publishing-docker-images
